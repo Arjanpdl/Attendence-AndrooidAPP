@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/backgroundgradient" >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="147dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mcneese" />
+
+    <TextView
+        android:id="@+id/passedclassname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="120dp"
+
+        android:fontFamily="serif"
+        android:text="wwww"
+        android:textAllCaps="true"
+        android:textFontWeight="15dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/editclassname"-->
+    <!--android:layout_width="183dp"-->
+    <!--android:layout_height="63dp"-->
+    <!--android:layout_marginTop="140dp"-->
+    <!--android:alpha="0.8"-->
+    <!--android:background="@drawable/button"-->
+    <!--android:drawableLeft="@drawable/user"-->
+    <!--android:hint=" COURSE NAME"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:paddingRight="32dp"-->
+    <!--android:textColorHint="#F8F8F8"-->
+    <!--android:textSize="15dp"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.526"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageView4" />-->
+
+    <Button
+        android:id="@+id/addstd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="151dp"
+        android:background="@drawable/button"
+        android:onClick="addStudents"
+        android:padding="20dp"
+        android:text="Add Student"
+        android:textColor="#1818DD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passedclassname" />
+
+    <Button
+        android:id="@+id/takattend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="121dp"
+        android:background="@drawable/button"
+        android:onClick="takeAttendence"
+
+        android:padding="20dp"
+        android:text="Take Attendence"
+        android:textColor="#1818DD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addstd" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
